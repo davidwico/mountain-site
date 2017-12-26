@@ -9,7 +9,28 @@
 
 </head>
 <body>
-    <h1>Siema</h1>
+
+    <header class="header">
+        <a class="menu-icon"><img class="header-icon" src="images/mountain-icon.svg"></a>
+        <nav class="header-nav">
+            <li><a href="#beginning" id="beginning-link">Beginning</a></li>
+            <li><a href="#trails" id="trails-link">Trails</a></li>
+            <li><a href="#tourists" id="tourists-link">Tourists</a></li>
+        </nav>
+    </header>
+
+    <div class="hero-image">
+        <picture>
+            <source srcset="images/mountain-bg-large.jpg" media="(min-width: 1050px)">
+            <source srcset="images/mountain-bg-medium.jpg" media="(min-width: 660px)">
+            <img class="header-img" srcset="images/mountain-bg-small.jpg" alt="Mountain Background">
+        </picture>
+        <div class="hero-image-text">
+                <h2 class="hero-subtitle">Let's begin</h2>
+                <h1 class="hero-title">our Mountain Journey</h1>
+                <button class="btn btn-hero">Sing in</button>
+        </div>
+    </div>
 
 
     <script src="scripts/jquery-3.2.1.min.js"></script>

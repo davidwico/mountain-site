@@ -1,9 +1,84 @@
-body {
-    background-color: grey;
+.header {
+    position: fixed;
+    top: 5px;
+    z-index: 5;
     display: flex;
+    width: 100%;
+    max-width: 660px;
+
+    @include tablet {
+        max-width: none;
+    }
+
+    @include desktop {
+        max-width: 100%;
+    }
 }
 
-h1 {
-    color: $blue; 
-    font-size: 90px;
+.menu-icon {
+    position: fixed;
+    margin-left: 5px;
+    top: 0;
+}
+
+.header-icon {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 0, 0, 0);
+    opacity: .9;
+
+    @include tablet {
+        width: 80px;
+        height: 80px;
+    }
+
+    @include desktop {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.header-icon path {
+    fill: red;
+}
+
+.header-nav {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+
+    @include smartphone {
+        margin-right: 5px;
+    }
+
+    li {
+        list-style-type: none;
+        flex-grow: 1;
+        padding-top: 10px;
+        text-align: center;
+
+        @include tablet {
+            margin-top: 10px;
+        }
+
+        @include desktop {
+            margin-top: 20px;
+        }
+    }
+    a {
+        text-decoration: none;
+        background-color: rgba($blue2, .9);
+        color: white;
+        padding: 5px 10px;
+
+        @include tablet {
+            padding: 8px 13px;
+        }
+
+        @include desktop {
+            padding: 15px 20px;
+        }
+    }
+
 }

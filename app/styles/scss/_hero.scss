@@ -1,0 +1,38 @@
+.hero-image {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+    @include tablet {
+        height: 80vh;
+    }
+
+}
+
+.hero-image-text {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-60%);
+    text-align: center;
+    width: 100%;
+}
+
+.hero-title {
+    font-weight: 300;
+    font-size: 2.5rem;
+    background-color: rgba($blue1, .2);
+
+    @include desktop {
+        font-size: 4rem;
+    }
+}
+
+.hero-subtitle {
+    font-weight: 100;
+    font-size: 2rem;
+    background-color: rgba($blue1, .2);
+
+    @include desktop {
+        font-size: 3rem;
+    }
+}
