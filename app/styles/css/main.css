@@ -1,0 +1,11 @@
+body {
+  background-color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+h1 {
+  color: rgba(32, 32, 177, 0.767);
+  font-size: 90px; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9oZWFkZXIuc2NzcyIsIl92YXJpYWJsZXMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLHVCQUFzQjtFQUN0QixxQkFBYTtFQUFiLHFCQUFhO0VBQWIsY0FBYSxFQUNoQjs7QUFFRDtFQUNJLGdDQ04yQjtFRE8zQixnQkFBZSxFQUNsQiIsImZpbGUiOiJtYWluLmNzcyIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbn1cclxuXHJcbmgxIHtcclxuICAgIGNvbG9yOiAkYmx1ZTsgXHJcbiAgICBmb250LXNpemU6IDkwcHg7XHJcbn0iLCIkYmx1ZTogcmdiYSgzMiwgMzIsIDE3NywgMC43NjcpOyJdfQ== */
