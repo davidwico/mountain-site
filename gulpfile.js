@@ -4,6 +4,8 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var postcss = require('gulp-postcss');
 var auto = require('autoprefixer');
+var webpack = require('webpack');
+
 
 gulp.task('serve', ['sass'], function() {
 
@@ -13,6 +15,9 @@ gulp.task('serve', ['sass'], function() {
 
     gulp.watch("app/styles/scss/*.scss", ['sass']);
     gulp.watch("app/*.html").on('change', browserSync.reload);
+    gulp.watch("app/scripts/**/*.js", function(){
+        gulp.start('scriptsRefresh');
+    });
 });
 
 gulp.task('sass', function () {
@@ -23,6 +28,20 @@ gulp.task('sass', function () {
      .pipe(sourcemaps.write())
      .pipe(gulp.dest('./app/styles/css'))
      .pipe(browserSync.stream());
+});
+
+gulp.task('scriptsRefresh', ['scripts'], function(){
+    browserSync.reload();
+});
+
+gulp.task('scripts', function(callback){
+    webpack(require('./webpack.config'), function(err, stats) {
+        if(err){
+            console.log(err.toString());
+        }
+        console.log(stats.toString());
+        callback();
+    });
 });
 
 gulp.task('default', ['serve']);
