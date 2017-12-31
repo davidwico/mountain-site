@@ -1,0 +1,21 @@
+.menu-icon {
+    position: fixed;
+    margin-left: 5px;
+    top: 0;
+}
+
+.menu-icon-img {
+    height: 50px;
+    width: 50px;
+
+    @include tablet {
+        width: 80px;
+        height: 80px;
+    }
+
+    @include desktop {
+        width: 100px;
+        height: 100px;
+    }
+}
+  

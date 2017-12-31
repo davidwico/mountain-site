@@ -81,17 +81,25 @@ var MenuShow = new __WEBPACK_IMPORTED_MODULE_0__modules_Menu__["a" /* default */
 "use strict";
 class Menu {
     constructor() {
-        this.MenuButton = $('.header-icon');
+        this.MenuButton = $('.menu-icon');
         this.Menu = $('.header-nav');
         this.menuEvent();
     }
 
     menuEvent() {
-        this.MenuButton.on('click', () => this.toggleMenu());
+        this.MenuButton.on('click', () => {
+            this.toggleMenu();this.hideMenu();
+        });
     }
 
     toggleMenu() {
         this.Menu.toggleClass('unvisible');
+    }
+
+    hideMenu() {
+        setTimeout(() => {
+            this.Menu.addClass('unvisible');
+        }, 5000);
     }
 }
 

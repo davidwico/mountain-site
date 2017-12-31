@@ -11,7 +11,10 @@
 <body>
 
     <header class="header">
-        <a class="menu-icon"><img class="header-icon" src="images/mountain-icon.svg"></a>
+        <a class="menu-icon">
+            <img class="menu-icon-img" src="images/mountain-icon.svg">
+            <span class="icon-shine"></span>
+        </a>
         <nav class="header-nav unvisible">
             <li><a href="#beginning" id="beginning-link">Beginning</a></li>
             <li><a href="#trails" id="trails-link">Trails</a></li>
@@ -31,6 +34,23 @@
                 <button class="btn btn-hero">Sing in</button>
         </div>
     </div>
+
+    <section class="beginning">
+        <div class="wrapper">
+            <h1 class="beginning-header">Road to the peak</h1>
+            <img sizes="(min-width: 970px) 976px, 100vw" 
+                srcset="images/peak-small.jpg 565w,
+                images/peak-medium.jpg 900w, 
+                images/peak-large.jpg 1800w" 
+                alt="Mountain peak.">
+            <p class="beginning-text">The mighty chunks rise all over the world, including the oceans. 
+                They usually have steep, sloping sides and sharp or rounded ridges, 
+                and a high point, called a peak or summit. Most geologists classify 
+                a mountain as a landform that rises at least 1,000 feet (300 meters) 
+                or more above its surrounding area. 
+                A mountain range is a series or chain of mountains that are close together.</p>
+        </div>
+    </section>
 
 
     <script src="scripts/jquery-3.2.1.min.js"></script>

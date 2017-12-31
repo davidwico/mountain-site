@@ -18,21 +18,10 @@
 }
 
 .hero-title {
-    font-weight: 300;
-    font-size: 2.5rem;
     background-color: rgba($blue1, .2);
 
-    @include desktop {
-        font-size: 4rem;
-    }
 }
 
 .hero-subtitle {
-    font-weight: 100;
-    font-size: 2rem;
     background-color: rgba($blue1, .2);
-
-    @include desktop {
-        font-size: 3rem;
-    }
 }
